@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Muscle Life Supplements"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "css.lint.unknownAtRules": "ignore",
+    "scss.lint.unknownAtRules": "ignore",
+    "less.lint.unknownAtRules": "ignore"
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss"
+    ]
+  }
+}

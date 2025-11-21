@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --ml-yellow: #FFD700;
+  --ml-yellow-dark: #E6C200;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  @apply bg-ml-gray-2 text-white font-sans;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(17,17,17,1));
+}
+
+.container{
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.btn-primary{
+  background-color:var(--ml-yellow);
+  color:#000000;
+}
+.btn-primary:hover{
+  background-color:#000000;
+  color:var(--ml-yellow);
+}
+
+.logo {
+  font-family: var(--font-heading, 'Oswald'), sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.card-hover:hover{
+  transform: translateY(-6px) scale(1.01);
+  transition: transform 200ms ease;
+}
+
