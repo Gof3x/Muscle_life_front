@@ -1,43 +1,201 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { PRODUCTS } from '../data/products'
+import type { Product } from '../types'
 // Cart removed: no shopping cart in header
 
 const Header: React.FC = () => {
   const [open, setOpen] = React.useState(false)
+  const [searchQuery, setSearchQuery] = React.useState('')
+  const [searchResults, setSearchResults] = React.useState<Product[]>([])
+  const [showResults, setShowResults] = React.useState(false)
+  const navigate = useNavigate()
+  const searchInputRef = React.useRef<HTMLInputElement>(null)
+
+  const handleSearch = (value: string) => {
+    setSearchQuery(value)
+    
+    if (value.trim() === '') {
+      setSearchResults([])
+      setShowResults(false)
+      return
+    }
+
+    const results = PRODUCTS.filter(product =>
+      product.name.toLowerCase().includes(value.toLowerCase()) ||
+      product.category.toLowerCase().includes(value.toLowerCase())
+    )
+    
+    setSearchResults(results)
+    setShowResults(true)
+  }
+
+  const handleSelectProduct = (productId: string) => {
+    navigate(`/product/${productId}`)
+    setSearchQuery('')
+    setShowResults(false)
+  }
+
+  const clearSearch = () => {
+    setSearchQuery('')
+    setSearchResults([])
+    setShowResults(false)
+  }
+
+  const [searchActive, setSearchActive] = React.useState(false)
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-ml-gray-1/95 backdrop-blur-sm border-b border-ml-gray-2 z-50">
-      <div className="container flex items-center justify-center h-16 relative">
-        <div className="absolute left-0 flex items-center">
+      <div className="container flex items-center justify-between h-16">
+        {/* Logo */}
+        <div className="flex items-center">
           <NavLink to="/" className="text-2xl logo font-bold">
             <span style={{ color: '#f2d01b' }}>Muscle</span>
             <span className="text-white"> Life</span>
           </NavLink>
         </div>
         
-        <nav className="hidden md:flex gap-4 items-center">
+        {/* Navigation Menu - Center */}
+        <nav className="hidden md:flex gap-8 items-center absolute left-1/2 transform -translate-x-1/2">
           <NavLink to="/" className={({ isActive }: { isActive: boolean }) => `px-3 py-2 ${isActive ? 'text-ml-yellow' : 'text-white'}`}>Home</NavLink>
           <NavLink to="/products" className={({ isActive }: { isActive: boolean }) => `px-3 py-2 ${isActive ? 'text-ml-yellow' : 'text-white'}`}>Produtos</NavLink>
           <NavLink to="/about" className={({ isActive }: { isActive: boolean }) => `px-3 py-2 ${isActive ? 'text-ml-yellow' : 'text-white'}`}>Sobre</NavLink>
           <NavLink to="/contact" className={({ isActive }: { isActive: boolean }) => `px-3 py-2 ${isActive ? 'text-ml-yellow' : 'text-white'}`}>Contato</NavLink>
         </nav>
 
-        <div className="absolute right-0 flex items-center gap-4">
-          <button onClick={() => setOpen(o => !o)} aria-label="Abrir menu" className="md:hidden p-2 text-white">
+        {/* Search Bar - Right */}
+        <div className="hidden md:flex items-center relative">
+          <div className="relative">
+            <svg className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              ref={searchInputRef}
+              type="text"
+              placeholder="Buscar..."
+              value={searchQuery}
+              onChange={(e) => handleSearch(e.target.value)}
+              onFocus={() => searchQuery && setShowResults(true)}
+              className="bg-ml-gray-2 text-white px-4 py-2 pl-10 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-ml-yellow transition text-sm w-64"
+            />
+            {searchQuery && (
+              <button
+                onClick={clearSearch}
+                className="absolute right-3 top-2.5 text-gray-400 hover:text-white"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            )}
+
+            {/* Search Results Dropdown */}
+            {showResults && searchResults.length > 0 && (
+              <div className="absolute top-full right-0 bg-ml-gray-2 border border-ml-gray-3 rounded-lg mt-2 shadow-lg z-10 w-80">
+                <div className="max-h-96 overflow-y-auto">
+                  {searchResults.map((product) => (
+                    <button
+                      key={product.id}
+                      onClick={() => handleSelectProduct(product.id)}
+                      className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-ml-gray-3 transition border-b border-ml-gray-3 last:border-b-0"
+                    >
+                      <img
+                        src={product.images[0]}
+                        alt={product.name}
+                        className="w-10 h-10 object-cover rounded"
+                      />
+                      <div className="text-left flex-1">
+                        <p className="font-semibold text-white text-sm">{product.name}</p>
+                        <p className="text-xs text-gray-400">{product.category}</p>
+                      </div>
+                      <p className="text-ml-yellow font-bold text-sm">
+                        R$ {product.price.toFixed(2)}
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* No Results Message */}
+            {showResults && searchResults.length === 0 && searchQuery && (
+              <div className="absolute top-full right-0 bg-ml-gray-2 border border-ml-gray-3 rounded-lg mt-2 p-4 text-center text-gray-400 w-80">
+                Nenhum produto encontrado
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center">
+          <button onClick={() => setOpen(o => !o)} aria-label="Abrir menu" className="p-2 text-white">
             <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1H22M0 8H22M0 15H22" stroke="white" strokeWidth="2" strokeLinecap="round"/></svg>
           </button>
-
-          {/* cart removed */}
         </div>
       </div>
 
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-ml-gray-1 border-t border-ml-gray-2">
-          <div className="container py-3 flex flex-col">
-            <NavLink to="/" onClick={() => setOpen(false)} className="py-2 text-white">Home</NavLink>
-            <NavLink to="/products" onClick={() => setOpen(false)} className="py-2 text-white">Produtos</NavLink>
-            <NavLink to="/about" onClick={() => setOpen(false)} className="py-2 text-white">Sobre</NavLink>
-            <NavLink to="/contact" onClick={() => setOpen(false)} className="py-2 text-white">Contato</NavLink>
+          <div className="container py-3 flex flex-col gap-4">
+            {/* Mobile Search */}
+            <div className="relative">
+              <svg className="absolute left-3 top-3 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <input
+                type="text"
+                placeholder="Buscar produtos..."
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                onFocus={() => searchQuery && setShowResults(true)}
+                className="w-full bg-ml-gray-2 text-white px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-ml-yellow transition"
+              />
+              {searchQuery && (
+                <button
+                  onClick={clearSearch}
+                  className="absolute right-3 top-2.5 text-gray-400 hover:text-white"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              )}
+            </div>
+
+            {/* Mobile Search Results */}
+            {showResults && searchResults.length > 0 && (
+              <div className="bg-ml-gray-2 border border-ml-gray-3 rounded-lg max-h-64 overflow-y-auto">
+                {searchResults.map((product) => (
+                  <button
+                    key={product.id}
+                    onClick={() => handleSelectProduct(product.id)}
+                    className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-ml-gray-3 transition border-b border-ml-gray-3 last:border-b-0"
+                  >
+                    <img
+                      src={product.images[0]}
+                      alt={product.name}
+                      className="w-10 h-10 object-cover rounded"
+                    />
+                    <div className="text-left flex-1">
+                      <p className="font-semibold text-white text-sm">{product.name}</p>
+                      <p className="text-xs text-gray-400">{product.category}</p>
+                    </div>
+                    <p className="text-ml-yellow font-bold text-sm">
+                      R$ {product.price.toFixed(2)}
+                    </p>
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Menu Links */}
+            <nav className="flex flex-col gap-2 border-t border-ml-gray-3 pt-4">
+              <NavLink to="/" onClick={() => setOpen(false)} className="py-2 text-white">Home</NavLink>
+              <NavLink to="/products" onClick={() => setOpen(false)} className="py-2 text-white">Produtos</NavLink>
+              <NavLink to="/about" onClick={() => setOpen(false)} className="py-2 text-white">Sobre</NavLink>
+              <NavLink to="/contact" onClick={() => setOpen(false)} className="py-2 text-white">Contato</NavLink>
+            </nav>
           </div>
         </div>
       )}
