@@ -178,6 +178,17 @@ export const PRODUCTS: Product[] = [
     benefits: ['Auxilia na queima de gordura corporal.', 'Aumenta a energia e disposição.', 'Melhora o foco mental durante os treinos.', 'Contém colina, que contribui para a função cognitiva e saúde do fígado.'],
     usage: 'Diluir 1 scoop de 10g em 200mL de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
     flavors: ['Limão', 'Melancia', 'Laranja']
+  },
+  {
+    id: 'creatina-05',
+    name: 'Creatina 100% pura 300g - TA suplementos',
+    price: 90.00,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_100_PURA_-_POTE___300G___TA_SUPLEMENTOS___AMINOACIDOS_efbdd88.png'],
+    description: 'A Creatina 100% Pura da TA Suplementos é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da TA Suplementos em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Sem sabor']
   }
 ]
 
