@@ -189,6 +189,83 @@ export const PRODUCTS: Product[] = [
     benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
     usage: 'Diluir uma porção de creatina da TA Suplementos em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
     flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-05',
+    name: '100% Whey protein 900g - refil - Shark pro',
+    price: 145.00,
+    category: 'Whey Protein',
+    images: ['/images/whey/100_WHEY_PROTEIN_-_REFIL___900G_-_CHOCOLATE___SHARK_PRO___PROTEINA_a1b9ff4.png'],
+    description: 'O 100% Whey Protein da Shark Pro é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional.',
+    flavors: ['Chocolate']
+  },
+  {
+    id: 'pre-05',
+    name: 'C4 Woman 200g - New Millen',
+    price: 99.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/C4_WOMAN___200G_-_LARANJA_E_AMORA___NEW_MILLEN___PRE-TREINO_070d19d.png'],
+    description: 'O C4 Woman é uma versão do famoso pré-treino C4 da Cellucor, formulado especificamente para atender às necessidades e objetivos do público feminino. Embora mantenha o foco na energia e desempenho característicos da linha C4, ele geralmente possui uma composição ajustada e ingredientes adicionais voltados para o bem-estar e a queima de gordura.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Laranja e amora', 'Tangerina']
+  },
+  {
+    id: 'hrt-05',
+    name: 'Therma pro hardcore 60c - integralmédica',
+    price: 62.00,
+    category: 'Termogênicos',
+    images: ['/images/Termo/THERMA_PRO_HARDCORE___60C___INTEGRALMEDICA___TERMOGENICO_cbf82d8.png'],
+    description: 'O Therma Pro Hardcore da Integralmedica é um suplemento termogênico desenvolvido para auxiliar na queima de gordura, aumento do metabolismo e melhoria da energia durante os treinos. Sua fórmula combina ingredientes que promovem a termogênese, ajudando o corpo a utilizar mais calorias ao longo do dia.',
+    benefits: ['Acelera o metabolismo.', 'Auxilia na queima de gordura corporal.', 'Aumenta a energia e disposição.', 'Melhora o foco mental durante os treinos.'],
+    usage: 'Ingerir 2 cápsulas ao dia, preferencialmente antes das refeições ou conforme orientação profissional.',
+    flavors: ['Cápsula']
+  },
+  {
+    id: 'creatina-06',
+    name: 'Creatina 300g - Shark pro',
+    price: 84.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___300G_-_NATURAL___SHARK_PRO___AMINOACIDOS_3fabc95.png'],
+    description: 'A Creatina Shark Pro é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-06',
+    name: '100% Whey Flavour 900g - refil - Atlhetica Nutrition',
+    price: 135.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/100_WHEY_FLAVOUR_-_REFIL___900G___BAUNILHA___ATLHETICA___PROTEINA_48dbab2.png'],
+    description: 'O 100% Whey Flavour da Atlhetica Nutrition é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Porção de 33g (2 dosadores)',
+    flavors: ['Baunilha', 'Chocolate', 'Morango' ]
+  },
+  {
+    id: 'pre-06',
+    name: 'Vampire night 140g - TA suplementos ',
+    price: 64.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/VAMPIRE_NIGHT___140G_-_GREEN_BLOOD___TA_SUPLEMENTOS___PRE-TREINO_eb7522b.png'],
+    description: 'O Vampire Night da TA Suplementos é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos realizados no período noturno. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade, sem comprometer a qualidade do sono.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Consumir 1 dosador ao dia, meia hora antes do treino ou conforme recomendação do seu nutricionista ou médico.',
+    flavors: ['Green blood', 'Blue blood']
+  },
+  {
+    id: 'hrt-06',
+    name: 'Lipo burn HD 60c - Atlhetica Nutrition',
+    price: 53.00,
+    category: 'Termogênicos',
+    images: ['/images/Termo/LIPO_BURN_HD___60_CAP___ATLHETICA_NUTRITION___TERMOGENICO_e6e83a4.png'],
+    description: 'O Lipo Burn HD da Atlhetica Nutrition é um suplemento termogênico que tem como objetivo auxiliar na queima de gordura e no aumento da energia. Sua fórmula contém ingredientes que promovem a termogênese e a lipólise, ajudando na redução de medidas e no emagrecimento.',
+    benefits: ['Acelera o metabolismo.', 'Auxilia na queima de gordura.', 'Aumenta a energia e disposição.', 'Melhora o foco e concentração.'],
+    usage: 'Ingerir 2 cápsulas diariamente. Preferencialmente 1 hora antes dos treinos, para indivíduos saudáveis a partir de 19 anos.',
+    flavors: ['Cápsula']
   }
 ]
 
