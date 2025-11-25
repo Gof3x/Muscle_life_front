@@ -266,6 +266,94 @@ export const PRODUCTS: Product[] = [
     benefits: ['Acelera o metabolismo.', 'Auxilia na queima de gordura.', 'Aumenta a energia e disposição.', 'Melhora o foco e concentração.'],
     usage: 'Ingerir 2 cápsulas diariamente. Preferencialmente 1 hora antes dos treinos, para indivíduos saudáveis a partir de 19 anos.',
     flavors: ['Cápsula']
+  },
+  {
+    id: 'creatina-07',
+    name: 'Creatina 100g - Probiotica',
+    price: 44.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___100G___PROBIOTICA___AMINOACIDOS_d86b352.png'],
+    description: 'Creatina Monohidratada 100% Pura, que é a forma mais pesquisada e eficaz do composto. Cada dose padrão oferece 3.000mg (3g) de creatina, sendo livre de carboidratos, açúcares, glúten e lactose.',
+    benefits: ['auxilia no aumento do desempenho físico durante exercícios repetidos de curta duração e alta intensidade.', 'Trata-se de um produto destinado a complementar os estoques endógenos de creatina.'],
+    usage: 'Deve-se ingerir de 3 a 5g de creatina por dia variando de acordo com o peso corporal do indivíduo, calculando-se multiplicando o peso corporal (em kg) por 0,07. Resultando na quantidade de gramas que uma pessoa deve ingerir por dia de creatina.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-07',
+    name: '100% Whey protein 900g - Shark pro',
+    price: 151.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/100_WHEY_PROTEIN_CONCENTRADO___900G_-_BAUNILHA___SHARK_PRO___PROTE_NAS_d96bf32.png'],
+    description: 'O 100% Whey Protein da Shark Pro é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: '1 dose (2 Scoops).',
+    flavors: ['Baunilha' ]
+  },
+  {
+    id: 'pre-07',
+    name: 'Impure 200g - Pure Suplementos',
+    price: 83.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/IMPURE___200G_-_COTTON_CANDY___PURE_SUPLEMENTOS___PR_-TREINO_a6f2377.png'],
+    description: 'O Impure da Pure Suplementos é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Cotton Candy']
+  },
+  {
+    id: 'hrt-07',
+    name: 'Thermo 60c - Mix Nutri',
+    price: 39.99,
+    category: 'Termogênicos',
+    images: ['/images/Termo/THERMO___60C_-_30G___MIX_NUTRI___TERMOG_NICO_f801e1b.png'],
+    description: 'O Thermo da Mix Nutri é um suplemento termogênico que auxilia na queima de gordura e no aumento da energia durante os treinos. Sua fórmula contém ingredientes que promovem a termogênese e a lipólise, ajudando na redução de medidas e no emagrecimento.',
+    benefits: ['Acelera o metabolismo.', 'Auxilia na queima de gordura.', 'Aumenta a energia e disposição.', 'Melhora o foco e concentração.'],
+    usage: 'Ingerir 2 cápsulas diariamente. Preferencialmente 1 hora antes dos treinos, para indivíduos saudáveis a partir de 19 anos.',
+    flavors: ['Cápsula']
+  },
+  {
+    id: 'creatina-08',
+    name: 'Creatina monohydrate 300g - Bodyaction',
+    price: 94.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINE_MONOHYDRATE___300G___BODYACTION___AMINOACIDOS_034f893.png'],
+    description: 'A Creatina Monohydrate da Bodyaction é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-08',
+    name: '100% Whey pure 900g - refil - Probiotica',
+    price: 159.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/100_PURE_WHEY_-_REFIL___900G_-_MORANGO___PROBIOTICA___PROTEINA_6764e68.png'],
+    description: 'O 100% Whey Pure da Probiótica é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Morango', 'Baunilha', 'Chocolate']
+  },
+  {
+    id: 'pre-08',
+    name: 'X7 300g - Atlhetica Nutrition',
+    price: 99.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/X7_-_POTE___300G_-_PINK_LEMONADE___ATLHETICA_NUTRITION___PRE-TREINO_7d4a29a.png'],
+    description: 'O X7 da Atlhetica Nutrition é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Pink lemonade', 'Blue ICE', 'Citrus orange & lemon',  'Frutas vermelhas', 'Ki-suco UVA']
+  },
+  {
+    id: 'hrt-08',
+    name: 'Caffeinex 200 60c - Atlhetica Nutrition',
+    price: 31.99,
+    category: 'Termogênicos',
+    images: ['/images/Termo/CAFFEINEX_200___60_CAP___ATLHETICA_NUTRITION___TERMOGENICO_0e1a11d.png'],
+    description: 'O Caffeinex 200 da Atlhetica Nutrition é um suplemento de cafeína anidra pura, desenvolvido para atletas que buscam maximizar a performance, o foco e a queima de gordura. Cada cápsula contém 200mg de cafeína, proporcionando um impulso energético eficaz.',
+    benefits: ['Excelente termogênico- Proporciona aumento de energia- Promove aceleração do metabolismo.'],
+    usage: 'Uma cápsula ao dia ou conforme orientação profissional.',
+    flavors: ['Cápsula']
   }
 ]
 
