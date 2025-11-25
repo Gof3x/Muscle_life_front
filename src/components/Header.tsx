@@ -1,48 +1,34 @@
 import React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { PRODUCTS } from '../data/products'
-import type { Product } from '../types'
 // Cart removed: no shopping cart in header
 
 const Header: React.FC = () => {
   const [open, setOpen] = React.useState(false)
   const [searchQuery, setSearchQuery] = React.useState('')
-  const [searchResults, setSearchResults] = React.useState<Product[]>([])
-  const [showResults, setShowResults] = React.useState(false)
   const navigate = useNavigate()
   const searchInputRef = React.useRef<HTMLInputElement>(null)
 
   const handleSearch = (value: string) => {
     setSearchQuery(value)
-    
-    if (value.trim() === '') {
-      setSearchResults([])
-      setShowResults(false)
-      return
-    }
+  }
 
-    const results = PRODUCTS.filter(product =>
-      product.name.toLowerCase().includes(value.toLowerCase()) ||
-      product.category.toLowerCase().includes(value.toLowerCase())
-    )
-    
-    setSearchResults(results)
-    setShowResults(true)
+  const submitSearch = (query: string) => {
+    const q = query.trim()
+    if (!q) return
+    navigate(`/search?query=${encodeURIComponent(q)}`)
+    setSearchQuery('')
   }
 
   const handleSelectProduct = (productId: string) => {
     navigate(`/product/${productId}`)
     setSearchQuery('')
-    setShowResults(false)
   }
 
   const clearSearch = () => {
     setSearchQuery('')
-    setSearchResults([])
-    setShowResults(false)
   }
 
-  const [searchActive, setSearchActive] = React.useState(false)
+  
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-ml-gray-1/95 backdrop-blur-sm border-b border-ml-gray-2 z-50">
@@ -75,54 +61,33 @@ const Header: React.FC = () => {
               placeholder="Buscar..."
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
-              onFocus={() => searchQuery && setShowResults(true)}
+              onKeyDown={(e) => { if (e.key === 'Enter') submitSearch(searchQuery) }}
               className="bg-ml-gray-2 text-white px-4 py-2 pl-10 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-ml-yellow transition text-sm w-64"
             />
-            {searchQuery && (
+            <div className="absolute right-2 top-2 flex items-center space-x-2">
+              {searchQuery && (
+                <button
+                  onClick={clearSearch}
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Limpar pesquisa"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              )}
               <button
-                onClick={clearSearch}
-                className="absolute right-3 top-2.5 text-gray-400 hover:text-white"
+                onClick={() => submitSearch(searchQuery)}
+                className="text-gray-400 hover:text-white"
+                aria-label="Pesquisar"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
-            )}
+            </div>
 
-            {/* Search Results Dropdown */}
-            {showResults && searchResults.length > 0 && (
-              <div className="absolute top-full right-0 bg-ml-gray-2 border border-ml-gray-3 rounded-lg mt-2 shadow-lg z-10 w-80">
-                <div className="max-h-96 overflow-y-auto">
-                  {searchResults.map((product) => (
-                    <button
-                      key={product.id}
-                      onClick={() => handleSelectProduct(product.id)}
-                      className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-ml-gray-3 transition border-b border-ml-gray-3 last:border-b-0"
-                    >
-                      <img
-                        src={product.images[0]}
-                        alt={product.name}
-                        className="w-10 h-10 object-cover rounded"
-                      />
-                      <div className="text-left flex-1">
-                        <p className="font-semibold text-white text-sm">{product.name}</p>
-                        <p className="text-xs text-gray-400">{product.category}</p>
-                      </div>
-                      <p className="text-ml-yellow font-bold text-sm">
-                        R$ {product.price.toFixed(2)}
-                      </p>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* No Results Message */}
-            {showResults && searchResults.length === 0 && searchQuery && (
-              <div className="absolute top-full right-0 bg-ml-gray-2 border border-ml-gray-3 rounded-lg mt-2 p-4 text-center text-gray-400 w-80">
-                Nenhum produto encontrado
-              </div>
-            )}
+            {/* Busca agora abre página de resultados em vez de dropdown */}
           </div>
         </div>
 
@@ -143,51 +108,33 @@ const Header: React.FC = () => {
               <svg className="absolute left-3 top-3 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
-              <input
-                type="text"
-                placeholder="Buscar produtos..."
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                onFocus={() => searchQuery && setShowResults(true)}
-                className="w-full bg-ml-gray-2 text-white px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-ml-yellow transition"
-              />
-              {searchQuery && (
-                <button
-                  onClick={clearSearch}
-                  className="absolute right-3 top-2.5 text-gray-400 hover:text-white"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </button>
-              )}
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Buscar produtos..."
+                    value={searchQuery}
+                    onChange={(e) => handleSearch(e.target.value)}
+                    onKeyDown={(e) => { if (e.key === 'Enter') submitSearch(searchQuery) }}
+                    className="w-full bg-ml-gray-2 text-white px-4 py-2 pl-10 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-ml-yellow transition"
+                  />
+                  <div className="absolute right-2 top-2 flex items-center space-x-2">
+                    {searchQuery && (
+                      <button onClick={clearSearch} className="text-gray-400 hover:text-white" aria-label="Limpar pesquisa">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                    )}
+                    <button onClick={() => submitSearch(searchQuery)} className="text-gray-400 hover:text-white" aria-label="Pesquisar">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
             </div>
 
-            {/* Mobile Search Results */}
-            {showResults && searchResults.length > 0 && (
-              <div className="bg-ml-gray-2 border border-ml-gray-3 rounded-lg max-h-64 overflow-y-auto">
-                {searchResults.map((product) => (
-                  <button
-                    key={product.id}
-                    onClick={() => handleSelectProduct(product.id)}
-                    className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-ml-gray-3 transition border-b border-ml-gray-3 last:border-b-0"
-                  >
-                    <img
-                      src={product.images[0]}
-                      alt={product.name}
-                      className="w-10 h-10 object-cover rounded"
-                    />
-                    <div className="text-left flex-1">
-                      <p className="font-semibold text-white text-sm">{product.name}</p>
-                      <p className="text-xs text-gray-400">{product.category}</p>
-                    </div>
-                    <p className="text-ml-yellow font-bold text-sm">
-                      R$ {product.price.toFixed(2)}
-                    </p>
-                  </button>
-                ))}
-              </div>
-            )}
+            {/* Mobile: a pesquisa abre a página de resultados ao pressionar Enter ou clicar no ícone */}
 
             {/* Menu Links */}
             <nav className="flex flex-col gap-2 border-t border-ml-gray-3 pt-4">

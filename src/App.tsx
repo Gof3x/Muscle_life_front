@@ -7,6 +7,7 @@ import Products from './pages/Products'
 import ProductDetail from './pages/ProductDetail'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import SearchResults from './pages/SearchResults'
 // Cart removed: CartModal no longer needed
 import CheckoutSuccess from './pages/CheckoutSuccess'
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/search" element={<SearchResults />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
