@@ -148,7 +148,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'whey-04',
-    name: 'My whey 900g - integralmedica',
+    name: 'My whey 900g - integralmédica',
     price: 134.99,
     category: 'Whey Protein',
     images: ['/images/whey/MY_WHEY___900G_-_MORANGO___INTEGRALMEDICA___PROTE_NA_0197fe3.png'],
