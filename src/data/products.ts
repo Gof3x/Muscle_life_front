@@ -3,7 +3,7 @@ import type { Product } from '../types'
 export const PRODUCTS: Product[] = [
   {
     id: 'whey-01',
-    name: 'Whey 100% pure - Refil 1.8kg',
+    name: 'Whey 100% pure  1.8kg - Refil - integralmédica',
     price: 377.99,
     category: 'Whey Protein',
     images: [
