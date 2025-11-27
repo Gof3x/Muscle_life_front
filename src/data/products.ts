@@ -354,7 +354,19 @@ export const PRODUCTS: Product[] = [
     benefits: ['Excelente termogênico- Proporciona aumento de energia- Promove aceleração do metabolismo.'],
     usage: 'Uma cápsula ao dia ou conforme orientação profissional.',
     flavors: ['Cápsula']
+  },
+  {
+    id: 'pre-09',
+    name: 'Vampire black 140g - TA suplementos ',
+    price: 64.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/VAMPIRE_BLACK_-_POTE___140G_-_MORANGO_DEVILS_BLOOD___TA_SUPLEMENTOS___PRE-TREINO_022f38e.png'],
+    description: 'O Vampire Black da TA Suplementos é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos realizados no período noturno. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade, sem comprometer a qualidade do sono.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Consumir 1 dosador ao dia, meia hora antes do treino ou conforme recomendação do seu nutricionista ou médico.',
+    flavors: ['Morango(devils blood)', 'Uva(blood wine)']
   }
+
 ]
 
 export const CATEGORIES = Array.from(new Set(PRODUCTS.map(p => p.category)))
