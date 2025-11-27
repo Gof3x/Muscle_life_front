@@ -432,7 +432,6 @@ export const PRODUCTS: Product[] = [
     usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
     flavors: ['Grape with lemon popsicle', 'Red gummy bear', 'Ki-suco UVA']
   },
-  
 ]
 
 export const CATEGORIES = Array.from(new Set(PRODUCTS.map(p => p.category)))
