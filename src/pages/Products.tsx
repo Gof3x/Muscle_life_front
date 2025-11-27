@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import ProductCard from '../components/ProductCard'
 import { PRODUCTS, CATEGORIES } from '../data/products'
 
 const Products: React.FC = () => {
   const [category, setCategory] = useState<string | null>(null)
   const [currentPage, setCurrentPage] = useState(1)
+  const [shuffledProducts, setShuffledProducts] = useState<typeof PRODUCTS | null>(null)
   const itemsPerPage = 16
 
   // Função para embaralhar array (Fisher-Yates shuffle)
@@ -17,15 +18,26 @@ const Products: React.FC = () => {
     return shuffled
   }
 
-  const filtered = category ? PRODUCTS.filter(p => p.category === category) : PRODUCTS
+  // Inicializar produtos embaralhados apenas uma vez
+  useEffect(() => {
+    const storedProducts = localStorage.getItem('shuffledProducts')
+    if (storedProducts) {
+      setShuffledProducts(JSON.parse(storedProducts))
+    } else {
+      const newShuffled = shuffleArray(PRODUCTS)
+      setShuffledProducts(newShuffled)
+      localStorage.setItem('shuffledProducts', JSON.stringify(newShuffled))
+    }
+  }, [])
+
+  const filtered = category && shuffledProducts
+    ? shuffledProducts.filter(p => p.category === category)
+    : shuffledProducts || []
   
-  // Embaralha apenas uma vez para cada categoria
-  const shuffled = useMemo(() => shuffleArray(filtered), [category])
-  
-  const totalPages = Math.ceil(shuffled.length / itemsPerPage)
+  const totalPages = Math.ceil(filtered.length / itemsPerPage)
   const startIndex = (currentPage - 1) * itemsPerPage
   const endIndex = startIndex + itemsPerPage
-  const paginatedProducts = shuffled.slice(startIndex, endIndex)
+  const paginatedProducts = filtered.slice(startIndex, endIndex)
 
   const getCategoryCount = (cat: string) => PRODUCTS.filter(p => p.category === cat).length
 
@@ -80,7 +92,7 @@ const Products: React.FC = () => {
         <section className="flex-1">
           <h2 className="text-2xl font-semibold mb-4">
             Produtos {category ? `- ${category}` : ''} 
-            <span className="text-ml-yellow ml-2">({shuffled.length})</span>
+            <span className="text-ml-yellow ml-2">({filtered.length})</span>
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {paginatedProducts.map(p => <ProductCard key={p.id} product={p} />)}
