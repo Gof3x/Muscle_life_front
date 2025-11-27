@@ -453,6 +453,237 @@ export const PRODUCTS: Product[] = [
     benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
     usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
     flavors: ['Chocolate']
+  },
+  {
+    id: 'pre-12',
+    name: 'Nun pre-workout 230g - TA suplementos ',
+    price: 149.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/NUN_-_POTE___230G_-_COTTON_CANDY___TA_SUPLEMENTOS___PRE-TREINO_9192781.png'],
+    description: 'O Nun pre-workout da TA Suplementos é um suplemento desenvolvido para fornecer energia e foco durante os treinos. Com uma fórmula balanceada, ele ajuda a melhorar o desempenho físico e mental, sendo ideal para quem busca um aumento de intensidade nos treinos.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água gelada e consumir 30 minutos antes do treino.',
+    flavors: ['Cotton Candy', 'Morango', 'Maçã verde', 'Uva']
+  },
+  {
+    id: 'creatina-12',
+    name: 'Creatina 100% 150g - Pronabol',
+    price: 67.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_100___300G___PRONABOL___AMINOACIDOS_e7e85ce.png'],
+    description: 'A Creatina 100% da Pronabol é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da Pronabol em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-12',
+    name: 'Isolate Definition 900g - Bodyaction', 
+    price: 154.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/ISOLATE_DEFINITION___900G___MORANGO___BODYACTION___PROTEINA_fdf177c.png'],
+    description: 'O Isolate Definition da Bodyaction é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Morango', 'Chocolate']
+  },
+  {
+    id: 'pre-13',
+    name: 'Panic 300g - Adaptogen',
+    price: 159.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/PANIC___300G_-_FRUIT_PUNCH___ADAPTOGEN___PR_-TREINO_efb098e.png'],
+    description: 'O Panic da Adaptogen é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Fruit punch', 'Uva', 'Melancia', 'Limonada', 'Manga e laranja', 'Maçã verde', 'Morango']
+  },
+  {
+    id: 'creatina-13',
+    name: 'Creatina 100% 300g - Pronabol',
+    price: 75.50,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_100___300G___PRONABOL___AMINOACIDOS_e7e85ce.png'],    
+    description: 'A Creatina 100% da Pronabol é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da Pronabol em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-13',
+    name: '100% Whey Dr. Peanut 900g - Max titanium',
+    price: 196.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/100_WHEY_DR._PEANUT_-_POTE___900G_-_BOMBOM_ITALIANO___MAX_TITANIUM___PROTEINA_1e5cc97.png'],
+    description: 'O 100% Whey Dr. Peanut da Max Titanium é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Bombom italiano', 'Buenissimo', 'Avelã', 'Doce de leite']
+  },
+  {
+    id: 'pre-14',
+    name: 'Abissal 300g - Shark pro',
+    price: 149.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/ABISSAL_-_POTE___300G_-_MELANCIA___SHARK_PRO___PRE-TREINO_88a9da3.png'],
+    description: 'O Abissal da Shark Pro é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Melancia']
+  },
+  {
+    id: 'creatina-14',
+    name: 'Creatina 300g - Nutrata',
+    price: 69.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___300G___NUTRATA___AMINOACIDOS_3f79a90.png'],
+    description: 'A Creatina da Nutrata é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-14',
+    name: 'Isolate Protein 900g - New millen',
+    price: 196.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/ISOLATE_PROTEIN_-_POTE___900G_-_ABACAXI_COM_HORTEL____NEW_MILLEN___PROTEINA_3d5fd7b.png'],
+    description: 'O Isolate Protein da New Millen é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Abacaxi com hortelã', 'Morango', 'Chocolate', 'Pêssego e manga', 'Orange juice']
+  },
+  {
+    id:'creatina-15',
+    name: 'Creatina 300g - Universal Nutrition',
+    price: 89.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___300G___UNIVERSAL_NUTRITION___AMINOACIDOS_4d8831e.png'],
+    description: 'A Creatina da Universal Nutrition é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-16',
+    name: 'Creatina Glyco HD 300g - Atlhetica Nutrition',
+    price: 64.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINE_GLYCO-HD___300G_-_UVA___ATLHETICA_NUTRITION___AMINOACIDOS_a15227c.png'],
+    description: 'A Creatina Glyco HD da Atlhetica Nutrition é um suplemento que combina Creatina Monohidratada com carboidratos de rápida absorção, como a dextrose. Essa combinação visa otimizar a absorção da creatina pelos músculos, potencializando seus efeitos no aumento de desempenho físico, força e volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Uva', 'Limão']
+  },
+  {
+    id: 'creatina-17',
+    name: 'Creatina 150g - Max titanium',
+    price: 64.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA___150G___MAX_TITANIUM___AMINOACIDO_16635a6.png'],
+    description: 'A Creatina Max Titanium é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-18',
+    name: 'Creatina 300g - Darkness',
+    price: 89.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___300G___DARKNESS___AMINOACIDOS_ad4f8e8.png'],
+    description: 'A Creatina da Darkness é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-19',
+    name: 'Creatina CREAPURE 300g - FTW',
+    price: 169.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_CREAPURE_-_POTE___300G___FTW___AMINOACIDOS_5dacb44.png'],
+    description: 'A Creatina Creapure da FTW é um suplemento composto por Creatina Monohidratada de alta pureza, utilizando a tecnologia Creapure, que é reconhecida mundialmente pela sua qualidade e segurança. A Creapure é produzida na Alemanha e passa por rigorosos controles de qualidade para garantir a ausência de impurezas e contaminantes.',
+    benefits: ['Fornece energia.', 'Melhora o desempenho durante os treinos.', 'Auxilia no processo de ganho de massa muscular (hipertrofia).', 'Facilita a recuperação e prevenção de lesões.', 'Apresenta resultados positivos no tratamento de diabetes, depressão, distrofias, sarcopenia, entre outros.'],
+    usage: 'Consumir 1 dosador ao dia, preferencialmente após o treino ou conforme recomendação do seu nutricionista ou médico.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-20',
+    name: 'Creatina 500g - Max titanium',
+    price: 119.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___500G___MAX_TITANIUM___AMINOACIDOS_c81ee42.png'],
+    description: 'A Creatina Max Titanium é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-21',
+    name: 'Creatina 100% 1Kg - TA suplementos',
+    price: 149.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_-_POTE___1KG___TA_SUPLEMENTOS___AMINOACIDOS_31efb29.png'],
+    description: 'A Creatina 100% da TA Suplementos é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da TA Suplementos em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-22',
+    name: 'Creatina micronizada 100% pure 150g - Leader',
+    price: 49.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_MICRONIZADA_100_PURE_-_POTE___150G___LEADER___AMINOACIDOS_70ea916.png'],
+    description: 'A Creatina Micronizada 100% Pure da Leader é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da Leader em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-23',
+    name: 'Creatina + Beta alanina pura 200g - Leader',
+    price: 64.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA___BETA_ALANINA_PURA_-_POTE___200G___LEADER___AMINOACIDOS_c6896dd.png'],
+    description: 'A Creatina + Beta Alanina Pura da Leader é um suplemento que combina Creatina Monohidratada com Beta Alanina, dois ingredientes amplamente reconhecidos por seus benefícios no desempenho físico. A creatina auxilia no aumento de força e volume muscular, enquanto a beta alanina contribui para a redução da fadiga muscular, permitindo treinos mais intensos e prolongados.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Reduz a fadiga muscular, permitindo treinos mais longos e intensos.', 'Fórmula 100% pura, sem aditivos ou conservantes.'],
+    usage: 'Diluir 3 g de creatina + beta alanina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'creatina-24',
+    name: '100% Creatina Flavour 300g - Atlhetica Nutrition',
+    price: 45.50,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/100_CREATINA_FLAVOUR_-_POTE___300G_-_LIMAO___ATLHETICA_NUTRITION___AMINOACIDOS_d76a936.png'],
+    description: 'A 100% Creatina Flavour da Atlhetica Nutrition é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da Atlhetica Nutrition em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Limão']
+  },
+  {
+    id: 'creatina-25',
+    name: '100% Creatina Flavour 300g - Atlhetica Nutrition',
+    price: 45.50,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/100_CREATINA_FLAVOUR_-_POTE___300G_-_UVA___ATLHETICA_NUTRITION___AMINOACIDOS_edba212.png'],
+    description: 'A 100% Creatina Flavour da Atlhetica Nutrition é um suplemento composto exclusivamente por Creatina Monohidratada, a forma mais eficiente e cientificamente validada para o aumento de desempenho. O produto é de alta pureza, livre de carboidratos, açúcares e glúten. Seu principal objetivo é elevar os estoques de fosfocreatina muscular, otimizando a ressíntese de ATP (energia rápida) em exercícios de curta duração e alta intensidade.',
+    benefits: ['Melhora a força muscular e o desempenho físico dos idosos nas atividades do dia a dia', 'Contribui para a redução da inflamação corporal', 'Acelera o processo de reabilitação após um período de imobilização', 'Aumenta a performance cognitiva', 'Participa da formação de ossos e cartilagem', 'Melhora o sistema imunológico e protege as células.'],
+    usage: 'Diluir uma porção de creatina da Atlhetica Nutrition em um copo de uma bebida de sua preferência em qualquer horário do dia ou conforme orientação profissional. Consulte um médico antes de usar esse produto se você estiver ou suspeitar de uma condição médica, estiver tomando medicamentos sujeitos a receita médica ou estiver grávida ou amamentando.',
+    flavors: ['Uva']
+  },
+  {
+    id: 'creatina-26',
+    name: 'Creatina Platinuum Series 300g - Adaptogen',
+    price: 99.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_PLATINUM_SERIES___300G___ADAPTOGEN___AMINO_CIDOS_2d4ed92.png'],
+    description: 'A Creatina Platinuum Series da Adaptogen é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
   }
 ]
 
