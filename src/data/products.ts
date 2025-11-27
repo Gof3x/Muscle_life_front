@@ -432,6 +432,28 @@ export const PRODUCTS: Product[] = [
     usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
     flavors: ['Grape with lemon popsicle', 'Red gummy bear', 'Ki-suco UVA']
   },
+  {
+    id: 'creatina-11',
+    name: 'Creatina Monohydrate 150g - bodyaction',
+    price: 49.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINE_MONOHYDRATE___150G___BODYACTION___AMINOACIDOS_94e4284.png'],
+    description: 'A Creatina Monohydrate da Bodyaction é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-11',
+    name: 'Whey tech 900g - Atlhetica Nutrition',
+    price: 189.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/WHEY_TECH___900G_-_CHOCOLATE___ATLHETICA_NUTRITION___PROTEINA_b80d4c7.png'],
+    description: 'O Whey Tech da Atlhetica Nutrition é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate']
+  }
 ]
 
 export const CATEGORIES = Array.from(new Set(PRODUCTS.map(p => p.category)))
