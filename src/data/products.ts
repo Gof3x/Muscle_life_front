@@ -365,8 +365,74 @@ export const PRODUCTS: Product[] = [
     benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
     usage: 'Consumir 1 dosador ao dia, meia hora antes do treino ou conforme recomendação do seu nutricionista ou médico.',
     flavors: ['Morango(devils blood)', 'Uva(blood wine)']
-  }
-
+  },
+  {
+    id: 'creatina-09',
+    name: 'Creatina creapure 200g - Atlhetica Nutrition',
+    price: 159.99,
+    category: 'Aminoácidos',
+    images: ['/images/creatina/CREATINA_CREAPURE_-_POTE___200G___ATLHETICA_NUTRITION___AMINOACIDOS_ecf6500.png'],
+    description: 'A Creatina Creapure da Atlhetica Nutrition é um suplemento composto por Creatina Monohidratada de alta pureza, utilizando a tecnologia Creapure, que é reconhecida mundialmente pela sua qualidade e segurança. A Creapure é produzida na Alemanha e passa por rigorosos controles de qualidade para garantir a ausência de impurezas e contaminantes.',
+    benefits: ['Fornece energia.', 'Melhora o desempenho durante os treinos.', 'Auxilia no processo de ganho de massa muscular (hipertrofia).', 'Facilita a recuperação e prevenção de lesões.', 'Apresenta resultados positivos no tratamento de diabetes, depressão, distrofias, sarcopenia, entre outros.'],
+    usage: 'Consumir 1 dosador ao dia, preferencialmente após o treino ou conforme recomendação do seu nutricionista ou médico.',
+    flavors: ['Sem sabor'] 
+  },
+  {
+    id: 'whey-09',
+    name: 'Whey W100 900g - Nutrata',
+    price: 165.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/WHEY_W100___900G_-_CREME_DE_COCO___NUTRATA___PROTE_NAS_7a7c59c.png'],
+    description: 'O Whey W100 da Nutrata é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Creme de coco', 'Baunilha', 'Chocolate', 'Cookies & Cream', 'Morango',  'Banana' ]
+  },
+  {
+    id: 'pre-10',
+    name: 'V9 pump 300g - Shark pro',
+    price: 129.99,
+    category: 'Pré-treino',
+    images: ['/images/pretreino/V9_PUMP___300G_-_TANGERINA___SHARKPRO___PR_-TREINO_82207cf.png'],
+    description: 'O V9 Pump da Shark Pro é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Tangerina', 'Uva', 'Maracuja',  'Cola']
+  },
+  {
+    id: 'creatina-10',
+    name: 'Creatina 300g - Max titanium',
+    price: 79.99,
+    category: 'Aminoácidos', 
+    images: ['/images/creatina/CREATINA___300G___MAX_TITANIUM___AMINOACIDO_768adf8.png'],
+    description: 'A Creatina Max Titanium é um suplemento que utiliza majoritariamente a Creatina Monohidratada, a forma mais tradicional e cientificamente validada para o aumento de desempenho. É desenvolvida para aumentar o desempenho físico, a força e o volume muscular.',
+    benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
+    usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
+    flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-10',
+    name: '100% Whey pure 900g - integralmédica',
+    price: 172.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/WHEY_100_PURE_-_POTE___900G_-_GELATO_DI_LATTE___INTEGRALMEDICA___PROTEINA_cd9a98c.png'],
+    description: 'O 100% Whey Pure da Integralmedica é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Gelato di latte', 'Baunilha', 'Chocolate', 'Morango', 'Cookies & Cream' ]
+  },
+  {
+    id: 'pre-11',
+    name: 'X7 hard tech 200g - Atlhetica Nutrition',
+    price: 119.99, 
+    category: 'Pré-treino',
+    images: ['/images/pretreino/X7_HARD_TECH___200G_-_GRAPE_WITH_LEMON_POPSICLE___ATLHETICA_NUTRITION___PRE-TREINO_a4c75c7.png'],
+    description: 'O X7 Hard Tech da Atlhetica Nutrition é um suplemento pré-treino formulado para fornecer energia, foco e resistência durante os treinos. Ele combina ingredientes que visam melhorar o desempenho físico e mental, ajudando os atletas a alcançarem seus objetivos de treino com maior intensidade.',
+    benefits: ['Aumento de energia e disposição.', 'Melhora do foco e concentração.', 'Aumento da resistência física.', 'Auxilia na vasodilatação, promovendo melhor entrega de nutrientes aos músculos.'],
+    usage: 'Dissolver 1 scoop (10g) em 200ml de água gelada, guardar em recipiente bem fechado e consumir 30mL a cada 2 horas.',
+    flavors: ['Grape with lemon popsicle', 'Red gummy bear', 'Ki-suco UVA']
+  },
+  
 ]
 
 export const CATEGORIES = Array.from(new Set(PRODUCTS.map(p => p.category)))
