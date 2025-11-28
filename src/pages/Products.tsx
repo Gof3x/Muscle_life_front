@@ -22,7 +22,21 @@ const Products: React.FC = () => {
   useEffect(() => {
     const storedProducts = localStorage.getItem('shuffledProducts')
     if (storedProducts) {
-      setShuffledProducts(JSON.parse(storedProducts))
+      try {
+        const parsed = JSON.parse(storedProducts)
+        // If stored list length mismatches current PRODUCTS length, regenerate
+        if (Array.isArray(parsed) && parsed.length === PRODUCTS.length) {
+          setShuffledProducts(parsed)
+        } else {
+          const newShuffled = shuffleArray(PRODUCTS)
+          setShuffledProducts(newShuffled)
+          localStorage.setItem('shuffledProducts', JSON.stringify(newShuffled))
+        }
+      } catch (e) {
+        const newShuffled = shuffleArray(PRODUCTS)
+        setShuffledProducts(newShuffled)
+        localStorage.setItem('shuffledProducts', JSON.stringify(newShuffled))
+      }
     } else {
       const newShuffled = shuffleArray(PRODUCTS)
       setShuffledProducts(newShuffled)
@@ -90,6 +104,9 @@ const Products: React.FC = () => {
         </aside>
 
         <section className="flex-1">
+          <div role="status" className="mb-4 p-4 rounded-lg bg-ml-yellow text-black font-semibold text-center">
+            Atenção — Para verificar os sabores disponíveis, clique em um produto para abrir sua página e ver as opções de sabor.
+          </div>
           <h2 className="text-2xl font-semibold mb-4">
             Produtos {category ? `- ${category}` : ''} 
             <span className="text-ml-yellow ml-2">({filtered.length})</span>

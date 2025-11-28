@@ -684,6 +684,171 @@ export const PRODUCTS: Product[] = [
     benefits: ['Aumenta a força e potência muscular.', 'Melhora o desempenho em treinos de alta intensidade.', 'Auxilia na recuperação muscular após os exercícios.', 'Fórmula 100% pura, sem aditivos ou conservantes.', 'Aumenta a retenção de água nas células musculares, promovendo maior volume muscular.'],
     usage: 'Diluir 3 g de creatina (02 colheres dosadoras) em água ou bebida de sua preferência;Consumir 1 porção ao dia ou conforme orientação profissional. Ingerir pelo menos 8 copos de água diariamente. Em relação a quantidade, procure um médico ou nutricionista para montar um plano alimentar adequado para o seu caso. Quanto ao uso, a creatina deve ser consumida todos os dias e em qualquer horário. Ou seja, mesmo nos dias que você não treina, precisa continuar suplementando.Uma ótima ideia é colocá-la junto a principal refeição do seu dia para otimizar a absorção da substância. Isso porque a creatina é melhor aproveitada quando consumida junto a carboidratos, bem como laranja, banana, uva ou aveia.',
     flavors: ['Sem sabor']
+  },
+  {
+    id: 'whey-15',
+    name: 'Best whey 900g - Atlhetica Nutrition',
+    price: 234.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/BEST_WHEY___900G_-_BROWNIE_CHOCOLATE___ATLHETICA_NUTRITION___PROTEINA_23546ca.png'],
+    description: 'O Best Whey da Atlhetica Nutrition é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Barwnie chocolate', 'Cocco & Ciocoolato', 'Leite, Cacau e avalã', 'Chocolate Branco', 'Vanilla Cream', 'Double Chocolate', 'Morango', 'Original','Cookies & Cream', 'Dulce de leche premium', 'Brigadeiro Gourmet', 'Pistache & Original']
+  },
+  {
+    id: 'whey-16',
+    name: 'Tasty whey 3W 900g - Adaptogen',
+    price: 234.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/TASTY_WHEY_3W_-_POTE___900G_-_PISTACHE___ADAPTOGEN___PROTEINA_4b97242.png'],
+    description: 'O Tasty Whey 3W da Adaptogen é um suplemento proteico que utiliza uma combinação de três tipos de proteínas do soro do leite: Proteína Concentrada (WPC), Proteína Isolada (WPI) e Proteína Hidrolisada (WPH). Essa combinação visa fornecer uma liberação gradual de aminoácidos, promovendo uma recuperação muscular mais eficiente e sustentada ao longo do tempo.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Pistache', 'Strawberry Cream', 'Vanilla cream', 'Chocotella Cream', 'Dulce de Leche', 'Churros', 'Brigadeiro']
+  },
+  {
+    id: 'whey-17',
+    name: 'ISO whey max 900g - Max titanium',
+    price: 379.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/ISO_WHEY_MAX_-_POTE___900G_-_BAUNILHA___MAX_TITANIUM___PROTEINA_9dcb834.png'],
+    description: 'O ISO Whey Max da Max Titanium é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Baunilha']
+  },
+  {
+    id: 'whey-18',
+    name: 'ISO pro whey 900g - Probiótica',
+    price: 379.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/ISO_PRO_WHEY___900G_-_CHOCOLATE___PROBIOTICA___PROTE_NAS_b794f52.png'],
+    description: 'O ISO Pro Whey da Probiótica é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate']
+  },
+  {
+    id: 'whey-19',
+    name: 'Isolate prime whey 900g - Bodyaction',
+    price: 229.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/ISOLATE_PRIME_WHEY___900G___CHOCOLATE___BODYACTION___PROTEINA_ca60b14.png'],
+    description: 'O Isolate Prime Whey da Bodyaction é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate', 'Morango']
+  },
+  {
+    id: 'whey-20',
+    name: 'Whey Fort 3W 900g - Vitafor',
+    price: 279.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/WHEY_FORT_3W___900G_-_BAUNILHA___VITAFOR___PROTE_NA_13a778d.png'],
+    description: 'O Whey Fort 3W da Vitafor é um suplemento proteico que utiliza uma combinação de três tipos de proteínas do soro do leite: Proteína Concentrada (WPC), Proteína Isolada (WPI) e Proteína Hidrolisada (WPH). Essa combinação visa fornecer uma liberação gradual de aminoácidos, promovendo uma recuperação muscular mais eficiente e sustentada ao longo do tempo.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate']
+  },
+  {
+    id: 'whey-21',
+    name: 'ISO tech 900g Atlhetica Nutrition',
+    price: 234.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/WHEY_TECH___900G_-_CHOCOLATE___ATLHETICA_NUTRITION___PROTEINA_b80d4c7.png'],
+    description: 'O ISO Tech da Atlhetica Nutrition é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate']
+  },
+  {
+    id: 'whey-22',
+    name: 'Best Whey ISO 900g - Atlhetica Nutrition',
+    price: 304.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/BEST_WHEY_ISO___900G___BAUNILHA___ATLHETICA___PROTEINA_9556350.png'],
+    description: 'O Best Whey ISO da Atlhetica Nutrition é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Baunilha', 'Brigadeiro']
+  },
+  {
+    id: 'whey-23',
+    name: 'Tasty ISO 900g - Adaptogen',
+    price: 424.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/TASTY_ISO___900G_-_CHOCOLATE_TRUFFLE___ADAPTOGEN___PROTEINA_dce5e32.png'],
+    description: 'O Tasty ISO da Adaptogen é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate Truffle']
+  },
+  {
+    id: 'whey-24',
+    name: '100% whey 900g - Max titanium',
+    price: 166.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/100_WHEY_-_POTE___900G_-_CHOCOLATE_MALTADO___MAX_TITANIUM___PROTEINA_69f052b.png'],
+    description: 'O 100% Whey da Max Titanium é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate Maltado', 'Baunilha', 'Morango', 'Cookies & Cream', 'Chocolate']
+  },
+  {
+    id: 'whey-25',
+    name: 'Pro veg protein 600g - Probiótica',
+    price: 179.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/PRO_VEG_PROTEIN_-_POTE___600G_-_CHOCOLATE___PROBIOTICA___PROTEINA_737c8cd.png'],
+    description: 'O Pro Veg Protein da Probiótica é um suplemento proteico de origem vegetal, ideal para veganos e vegetarianos que buscam uma alternativa às proteínas tradicionais derivadas do leite. Ele combina proteínas de ervilha, arroz e outras fontes vegetais para fornecer um perfil completo de aminoácidos essenciais.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Adequado para dietas veganas e vegetarianas.', 'Contém fibras que auxiliam na digestão.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite vegetal. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate']
+  },
+  {
+    id: 'whey-26',
+    name: 'Bold whey 450g - Bold snacks',
+    price: 144.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/BOLD_WHEY_-_SACO___450G_-_DOCE_DE_LEITE___BOLD_SNACKS___PROTEINA_a270a78.png'],
+    description: 'O Bold Whey da Bold Snacks é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Doce de leite', 'Chocolate ao leite', 'Cookies & cream', 'Milkshake de baunilha']
+  },
+  {
+    id: 'whey-27',
+    name: 'Bold whey 900g - Bold snacks',
+    price: 249.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/BOLD_WHEY_-_SACO___900G_-_DOCE_DE_LEITE___BOLD_SNACKS___PROTEINA_5b45c57.png'],
+    description: 'O Bold Whey da Bold Snacks é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Doce de leite', 'Chocolate ao leite', 'Cookies & cream', 'Milkshake de baunilha', 'Mousse de morango']
+  },
+  {
+    id: 'whey-28',
+    name: 'ISO clear whey 405g - Max titanium',
+    price: 249.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/ISO_CLEAR_WHEY___POTE_405G___ABACAXI_COM_COCO___MAX_TITANIUM_47f03f4.png'],
+    description: 'O ISO Clear Whey da Max Titanium é um suplemento proteico que utiliza predominantemente a Proteína Isolada do Soro do Leite (WPI). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Abacaxi com coco', 'Morango com laranja']
+  },
+  {
+    id: 'whey-29',
+    name: 'Whey protein concentrado 900g - DUX',
+    price: 249.99,
+    category: 'Whey Protein',
+    images: ['/images/whey/WHEY_PROTEIN_CONCENTRADO_-_POTE___900G_-_DOCE_DE_LEITE___DUX___PROTEINA_9cc1236.png'],
+    description: 'O Whey Protein Concentrado da DUX é um suplemento proteico que utiliza predominantemente a Proteína Concentrada do Soro do Leite (WPC). É uma opção eficaz para quem busca suplementar a ingestão diária de proteínas, especialmente após os treinos, para promover a recuperação muscular e o crescimento.',
+    benefits: ['Auxilia no ganho e manutenção de massa muscular.', 'Promove a recuperação muscular pós-treino.', 'Fonte de proteínas de alta qualidade e valor biológico.', 'Contém enzimas digestivas para melhor absorção.'],
+    usage: 'Misturar 1 scoop (30g) em 200ml de água ou leite desnatado. Consumir após o treino ou conforme orientação profissional',
+    flavors: ['Chocolate branco', 'Doce de leite']
   }
 ]
 
